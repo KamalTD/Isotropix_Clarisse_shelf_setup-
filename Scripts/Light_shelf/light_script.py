@@ -1,1 +1,1 @@
-print "Animation Shelf Script"
+print "Light Shelf Script"
