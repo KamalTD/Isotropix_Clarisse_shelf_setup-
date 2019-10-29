@@ -33,23 +33,15 @@ from ix import *
 # ===================================================================================
 
 
-
-linux_main_path = "/Volumes/Trend/Projects/Active/updates/Tools/Scripts"  # main linux path
-
-windows_main_path = "Y:/Assets/Scripts/ClarisseTools"  # main windows path
-
-#windows_main_path = "Y:/Assets/Scripts/MayaTools"  # main windows path
-
-# check if windows
+windows_main_path = "Y:/Assets/Scripts/ClarisseTools/Scripts"  
 
 
-
-path_name = windows_main_path + '/Scripts'
+path_name = windows_main_path
 
 dirs = os.listdir(path_name)
 
 
-# sourcing mel scripts
+
 
 
 def is_item_exists(slot, category_name, item_title):
@@ -87,11 +79,11 @@ for folder in dirs:
 
 
 
-        after_split = file_.split(".")  # check if script lang == mel or not
+        after_split = file_.split(".")  
 
 
 
-        if after_split[1] == 'py':  # select just 'py' and 'mel' files only
+        if after_split[1] == 'py':  
 
             script_full_path = sub_folder + "/" + file_
 
